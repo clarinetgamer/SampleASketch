@@ -58,6 +58,7 @@ void processImage() {
       modImg.pixels[loc] =  color(r, g, b);
     }
     int avg = findAvgY(readRedPix);
+    float avgFl = map(avg, 0, height, -1, 1); //
     wav[x] = avg;
   }
   modImg.updatePixels();
@@ -65,9 +66,10 @@ void processImage() {
 
 
 void playWav(float[] wav){
-  sample = new AudioSample(this, wav, 200 * wav.length);
+  int speed = 200; // will change based on button
+  sample = new AudioSample(this, wav, speed * width);
 
-  // Play the sample in a loop (but don't make it too loud)
+  // Play the sample 
   sample.amp(0.2);
   sample.loop();
 }
