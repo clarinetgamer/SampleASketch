@@ -1,14 +1,18 @@
 import java.util.Map;
+import processing.sound.*;
+
+AudioSample sample;
 
 PImage img; // PImage declaration
 PImage modImg; // Post processing image
 
-HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+float[] wav;
 
 void settings() { // Bc using variables for size must be done in settings
   int width = 1172;
   int height = 638;
   size(width, height);
+  wav = new float[width];
 }
 
 void setup() {
@@ -54,20 +58,23 @@ void processImage() {
       modImg.pixels[loc] =  color(r, g, b);
     }
     int avg = findAvgY(readRedPix);
-    map.put(x, avg);
+    wav[x] = avg;
   }
   modImg.updatePixels();
 }
 
-void printMapData() { 
-  for(int i = 0; i < map.size(); i ++){
-  println(i + " " + map.get(i).toString());
-  }
+
+void playWav(float[] wav){
+  sample = new AudioSample(this, wav, 200 * wav.length);
+
+  // Play the sample in a loop (but don't make it too loud)
+  sample.amp(0.2);
+  sample.loop();
 }
 
 void draw() {
   processImage();
   delay(1000);//I know this is not how you should stop the program this is for testing
   image(modImg, 0, 0); // display new image
-  printMapData();
+  playWav(wav);
 }
