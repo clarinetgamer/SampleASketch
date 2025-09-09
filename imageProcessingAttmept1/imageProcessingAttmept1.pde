@@ -67,7 +67,6 @@ void processImage() {
 
 
 void playWav(float[] wav) {
-
   sample = new AudioSample(this, wav, 200 * width);
 
   // Play the sample
@@ -89,6 +88,9 @@ void draw() {
   image(modImg, 0, 0); // display new image
   //printWav(wav);
   playWav(wav);
+  
+  
+  //Wav testing
   delay(1000); //again know not to do this just testing
   sample.stop();
   delay(1000); //again know not to do this just testing
