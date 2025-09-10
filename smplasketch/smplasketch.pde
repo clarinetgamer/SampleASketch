@@ -16,10 +16,11 @@ void setup() {
 }
 
 void draw() {
-  float[] wav = processImage();
+  float[] wav = processWavImage();
   delay(1000);//I know this is not how you should stop the program this is for testing
   image(modImg, 0, 0); // display new image
   //printWav(wav);
-  //playWav(wav);
-  
+  processing.sound.AudioSample smpl = createSample(wav);
+  playWav(smpl);
+  playEnv(smpl);
 }

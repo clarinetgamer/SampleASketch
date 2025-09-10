@@ -11,7 +11,7 @@ int findAvgY(ArrayList<Integer> list) { // find average of y pixels from drawing
   return avg;
 }
 
-float[] processImage() { //takes the image from the folder changes all red pixels to green and returns float array of drawn wave - need to modify for 2 images being processed
+float[] processWavImage() { //takes the image from the folder changes all red pixels to green and returns float array of drawn wave 
   modImg.loadPixels(); //load display pixels
   img.loadPixels(); //load images pizels
   

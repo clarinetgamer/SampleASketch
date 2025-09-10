@@ -1,21 +1,13 @@
-processing.sound.AudioSample sample;
+processing.sound.AudioSample sample; // have to use this full class for import bc there is also an audiosample object in minim
 
-void playWav(float[] wav) {
+processing.sound.AudioSample createSample(float[] wav) {
   sample = new processing.sound.AudioSample(this, wav, 200 * width);
+  return sample;
+}
 
+void playWav(processing.sound.AudioSample sample) {
   // Play the sample
-  sample.rate(0.5);
+  sample.rate(0.5); //add pitch shift due to button 
   sample.amp(0.2);
   sample.loop();
-  
-  
-  ////Wav testing
-  //delay(1000); //again know not to do this just testing
-  //sample.stop();
-  //delay(1000); //again know not to do this just testing
-  //sample.rate(1);
-  //sample.amp(0.2);
-  //sample.loop();
-  //delay(1000); //again know not to do this just testing
-  //sample.stop();
 }

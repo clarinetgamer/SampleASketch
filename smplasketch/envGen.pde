@@ -1,10 +1,15 @@
-Env env;
+Env env = new Env(this); 
+
+
+//generate these values off of image scan
 
 float attackTime = 0.001;
 float sustainTime = 0.004;
-float sustainLevel = 0.3;
 float releaseTime = 0.4;
 
-void playEnv() { //has not been tested
+float sustainLevel = 0.3; //keep the same
+
+
+void playEnv(processing.sound.AudioSample sample) { //takes in a sample object and using the variables plays an envelope
   env.play(sample, attackTime, sustainTime, sustainLevel, releaseTime);
 }
