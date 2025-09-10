@@ -1,27 +1,5 @@
-import java.util.Map;
-import processing.sound.*;
-
-AudioSample sample;
-
 PImage img; // PImage declaration
 PImage modImg; // Post processing image
-
-float[] wav;
-
-void settings() { // Bc using variables for size must be done in settings
-  int width = 1172;
-  int height = 638;
-  size(width, height);
-  wav = new float[width];
-}
-
-void setup() {
-  modImg = createImage(width, height, RGB); // Create image to write other data to
-  img = loadImage("dummyline.png"); // Load janky image from folder
-  //img = loadImage("dummylinesinish.png"); // Load sinishimage from folder
-  image(img, 0, 0); // display image
-  noLoop();
-}
 
 int findAvgY(ArrayList<Integer> list) { // find average of y pixels from drawing
   int avg = 0;
@@ -33,9 +11,11 @@ int findAvgY(ArrayList<Integer> list) { // find average of y pixels from drawing
   return avg;
 }
 
-void processImage() {
+float[] processImage() { //takes the image from the folder changes all red pixels to green and returns float array of drawn wave - need to modify for 2 images being processed
   modImg.loadPixels(); //load display pixels
   img.loadPixels(); //load images pizels
+  
+   float[] wav = new float[width];
 
   for (int x = 0; x < width; x++) {
     ArrayList<Integer> readRedPix = new ArrayList<Integer>(); // create list to hold y values for a single x point
@@ -63,40 +43,12 @@ void processImage() {
     wav[x] = avgFl;
   }
   modImg.updatePixels();
+  return wav;
 }
 
-
-void playWav(float[] wav) {
-  sample = new AudioSample(this, wav, 200 * width);
-
-  // Play the sample
-  sample.rate(0.5);
-  sample.amp(0.2);
-  sample.loop();
-}
-
-void printWav(float[] wav) {
+void printWav(float[] wav) { //Print float array storing wav
   for (int i = 0; i < width; i ++) {
     println(i + " " + wav[i]);
     delay(1000);
   }
-}
-
-void draw() {
-  processImage();
-  delay(1000);//I know this is not how you should stop the program this is for testing
-  image(modImg, 0, 0); // display new image
-  //printWav(wav);
-  playWav(wav);
-  
-  
-  //Wav testing
-  delay(1000); //again know not to do this just testing
-  sample.stop();
-  delay(1000); //again know not to do this just testing
-  sample.rate(1);
-  sample.amp(0.2);
-  sample.loop();
-  delay(1000); //again know not to do this just testing
-  sample.stop();
 }
