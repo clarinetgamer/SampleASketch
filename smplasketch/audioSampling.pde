@@ -1,7 +1,7 @@
 AudioSample sample; 
 
 AudioSample createSample(float[] wav) { //create sample object from float array
-  sample = new processing.sound.AudioSample(this, wav, 200 * width);
+  sample = new AudioSample(this, wav, 200 * width);
   return sample;
 }
 
