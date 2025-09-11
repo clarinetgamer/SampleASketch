@@ -1,0 +1,35 @@
+Checklist By Week:
+Week 1:
+- Set up GitHub ✓
+- Headless Pi Setup ✓
+- Swap out Camera cables ✓
+- Write WaveTable Image Processing Code ✓
+- Create an audio sample from the Wavetable data ✓
+- Documentation ✓
+- Weekly Youtube Upload ✓
+Week 2:
+- Organize Processing document into tabs ✓
+- Install Processing on Pi ✓
+- Rewrite functions for more IO with other functions capability ✓
+- Write Envelope Generator functions ✓
+- Write camera capture code ✓
+- Look into final sample delivery methods possibly minim ✓
+- Write the image processing code needed to pull ASR envelope from scan
+- Connect camera capture code to the image processing code
+- Tweak image processing code based on camera defects
+- Simulate the usage of the device by adding keyboard/mouse click replacements for eventual buttons
+- Build in code to eventually work with buttons on device
+- Write a main.java style tab in which all other functions are called from a continuous loop
+- Anything that isn’t included above but essentially full code base should be “set in stone” and complete
+- Order backlight part/audio jack/other necessary parts from Adafruit for next week
+- Documentation
+- Weekly Youtube Upload
+Week 3:
+- Wire up buttons/backlight/audio jack on the Pi
+- Put finished Processing code base onto the Pi
+- Debug the inevitable errors
+- Tweak code to match Pi camera/hardware
+- Program the Pi to open Processing
+- Program the Pi to run the codebase on boot
+- Documentation
+- Weekly Youtube Upload
