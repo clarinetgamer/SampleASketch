@@ -1,5 +1,7 @@
-PImage img; // PImage declaration
-PImage modImg; // Post processing image
+PImage img; 
+PImage envImg; 
+PImage modImg; 
+PImage modEnvImg; 
 
 int findAvgY(ArrayList<Integer> list) { // find average of y pixels from drawing
   int avg = 0;
