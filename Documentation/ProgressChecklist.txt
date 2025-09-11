@@ -21,6 +21,7 @@ Week 2:
 - Build in code to eventually work with buttons on device
 - Write a main.java style tab in which all other functions are called from a continuous loop
 - Anything that isn’t included above but essentially full code base should be “set in stone” and complete
+- Test the full functioning "device" off of MacBook
 - Order backlight part/audio jack/other necessary parts from Adafruit for next week
 - Documentation
 - Weekly Youtube Upload
@@ -31,5 +32,14 @@ Week 3:
 - Tweak code to match Pi camera/hardware
 - Program the Pi to open Processing
 - Program the Pi to run the codebase on boot
+- Documentation
+- Weekly Youtube Upload
+Week 4:
+- Documentation
+- Weekly Youtube Upload
+Week 5:
+- Documentation
+- Weekly Youtube Upload
+Week 6:
 - Documentation
 - Weekly Youtube Upload
