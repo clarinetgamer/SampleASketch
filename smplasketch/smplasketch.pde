@@ -30,7 +30,7 @@ void draw() {
 
 
   //printWav(wav);
-  processing.sound.AudioSample smpl = createSample(wav);
+  AudioSample smpl = createSample(wav);
   playWav(smpl);
   playEnv(smpl);
 }

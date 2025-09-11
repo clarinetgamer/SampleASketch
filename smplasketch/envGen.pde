@@ -10,6 +10,6 @@ float releaseTime = 0.4;
 float sustainLevel = 0.3; //keep the same
 
 
-void playEnv(processing.sound.AudioSample sample) { //takes in a sample object and using the variables plays an envelope
+void playEnv(AudioSample sample) { //takes in a sample object and using the variables plays an envelope
   env.play(sample, attackTime, sustainTime, sustainLevel, releaseTime);
 }
