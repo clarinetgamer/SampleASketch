@@ -2,7 +2,7 @@ import java.util.Map;
 import processing.sound.*;
 
 void settings() { // using variables for size must be done in settings()
-  int[] sizeArr = {1172, 638};
+  int[] sizeArr = {1172, 638}; //fix width to match pi cam
   int width = sizeArr[0];
   int height = sizeArr[1];
   size(width, height);
