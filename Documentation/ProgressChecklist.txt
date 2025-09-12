@@ -14,8 +14,8 @@ Week 2:
 - Write Envelope Generator functions ✓
 - Write camera capture code ✓
 - Look into final sample delivery methods possibly minim ✓
-- Write the image processing code needed to pull ASR envelope from scan
-- Connect camera capture code to the image processing code
+- Write the image processing code needed to pull ASR envelope from scan ✓
+- Connect camera capture code to the image processing code ✓
 - Tweak image processing code based on camera defects
 - Simulate the usage of the device by adding keyboard/mouse click replacements for eventual buttons
 - Build in code to eventually work with buttons on device
