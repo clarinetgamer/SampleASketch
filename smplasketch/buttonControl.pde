@@ -1,11 +1,11 @@
 void wavSnap() {
   takePicture("wav_image");
-  wavImg = loadImage("wav_image.png");
+  wavImg = loadImage("wav_image.jpg");
 }
 
 void envSnap() {
   takePicture("env_image");
-  envImg = loadImage("env_image.png");
+  envImg = loadImage("env_image.jpg");
 }
 
 void incWavMult() {
