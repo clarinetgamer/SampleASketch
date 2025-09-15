@@ -1,10 +1,16 @@
 void wavSnap() {
+  //light on
+  //delay
   takePicture("wav_image");
+  //light off
   wavImg = loadImage("wav_image.jpg");
 }
 
 void envSnap() {
+  //light on
+  //delay
   takePicture("env_image");
+  //light off
   envImg = loadImage("env_image.jpg");
 }
 
