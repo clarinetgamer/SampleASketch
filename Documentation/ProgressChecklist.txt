@@ -16,15 +16,14 @@ Week 2:
 - Look into final sample delivery methods possibly minim ✓
 - Write the image processing code needed to pull ASR envelope from scan ✓
 - Connect camera capture code to the image processing code ✓
-- Build in code to eventually work with buttons on device  ✓
-- Simulate the usage of the device by adding key bind replacements for eventual buttons  ✓
-- Write a main.java style tab in which all other functions are called from a continuous loop  ✓
-- Update image width/height code  ✓
-- Tweak image processing code based on camera defects
-- Test the full functioning "device" off of MacBook
+- Build in code to eventually work with buttons on device ✓
+- Simulate the usage of the device by adding key bind replacements for eventual buttons ✓
+- Write a main.java style tab in which all other functions are called from a continuous loop ✓
+- Update image width/height code ✓
+- Test the full functioning "device" off of MacBook ✓
 - Order backlight part/audio jack/other necessary parts from Adafruit for next week
-- Documentation
-- Weekly Youtube Upload
+- Documentation ✓
+- Weekly Youtube Upload  ✓
 Week 3:
 - Wire up buttons/backlight/audio jack on the Pi
 - Put finished Processing code base onto the Pi
