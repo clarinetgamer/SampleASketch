@@ -14,10 +14,7 @@ void searchForCamera() {
     for (int i = 0; i < cameras.length; i++) {
       println(cameras[i]);
     }
-
-    // The camera can be initialized directly using an
-    // element from the array returned by list():
-    cam = new Capture(this, cameras[0]);
+ cam = new Capture(this, width, height, "pipeline:avfvideosrc device-index=0", 30);
     cam.start();
   }
 }

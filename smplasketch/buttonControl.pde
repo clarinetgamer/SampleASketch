@@ -41,6 +41,8 @@ void decEnvMult() {
 void reset() {
   wavImg = loadImage("dummylinesinish.png");
   envImg = loadImage("dummyenvline.png");
+  envMult =0;
+  wavMult=0;
 }
 
 void smpl() {

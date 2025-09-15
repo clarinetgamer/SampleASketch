@@ -37,7 +37,7 @@ void keyPressed() {
   } else if (key == '-') {
     decWavMult();
     println("decWav");
-  } else if (key == '+') {
+  } else if (key == '=') {
     incWavMult();
     println("incWav");
   } else if (key == 's') {
