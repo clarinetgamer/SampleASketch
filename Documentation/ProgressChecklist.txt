@@ -16,11 +16,10 @@ Week 2:
 - Look into final sample delivery methods possibly minim ✓
 - Write the image processing code needed to pull ASR envelope from scan ✓
 - Connect camera capture code to the image processing code ✓
-- Tweak image processing code based on camera defects
+- Build in code to eventually work with buttons on device  ✓
 - Simulate the usage of the device by adding keyboard/mouse click replacements for eventual buttons
-- Build in code to eventually work with buttons on device
 - Write a main.java style tab in which all other functions are called from a continuous loop
-- Anything that isn’t included above but essentially full code base should be “set in stone” and complete
+- Tweak image processing code based on camera defects
 - Test the full functioning "device" off of MacBook
 - Order backlight part/audio jack/other necessary parts from Adafruit for next week
 - Documentation
@@ -35,11 +34,19 @@ Week 3:
 - Documentation
 - Weekly Youtube Upload
 Week 4:
+- Measure camera tolerances/more debugging
+- Begin Early Fabrication Work
+- Complete anything from previous week that is unfinished
+- Design and test multiple variations/materials of the slide
 - Documentation
 - Weekly Youtube Upload
 Week 5:
+- Continue fabrication work
+- Get breadboard prototype to a point where it is entirely functional
 - Documentation
 - Weekly Youtube Upload
 Week 6:
+- Continue fabrication work
+- Debug and do any additional work to have functioning prototype for midterm
 - Documentation
 - Weekly Youtube Upload
