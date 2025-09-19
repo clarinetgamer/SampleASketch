@@ -23,30 +23,33 @@ Week 2:
 - Test the full functioning "device" off of MacBook ✓
 - Order backlight part/audio jack/other necessary parts from Adafruit for next week
 - Documentation ✓
-- Weekly Youtube Upload  ✓
+- Weekly Youtube Upload ✓
 Week 3:
-- Wire up buttons/backlight/audio jack on the Pi
-- Put finished Processing code base onto the Pi
-- Debug the inevitable errors
-- Tweak code to match Pi camera/hardware
-- Program the Pi to open Processing
-- Program the Pi to run the codebase on boot
+- HARD PIVOT(DITCH THE PI... For Now At Least...) ✓
+- Design some graphics ✓
+- Wire up buttons/backlight/audio jack on the Teensy
+- Write entire Teensy control code
+- Modify processing code to be desktop ready
+- Test with standard webcam
+- Begin User Interface Work for desktop app
+- Do all of the PCB Tutorials
 - Documentation
 - Weekly Youtube Upload
 Week 4:
-- Measure camera tolerances/more debugging
-- Begin Early Fabrication Work
-- Complete anything from previous week that is unfinished
-- Design and test multiple variations/materials of the slide
+- Design PCB for Teensy/buttons
+- More UI
+- Design and test multiple variations/materials of the plexiglass slide
+- Take apart a webcam and reconfigure to have identifiable name
 - Documentation
 - Weekly Youtube Upload
 Week 5:
-- Continue fabrication work
-- Get breadboard prototype to a point where it is entirely functional
+- First Design/Print/Cut of Housing
+- Design separate housing for camera module
+- Add Photo to soundwave feature to processing sketch 
 - Documentation
 - Weekly Youtube Upload
 Week 6:
-- Continue fabrication work
-- Debug and do any additional work to have functioning prototype for midterm
+- Add some additional feature to the processing sketch that are cool
+- Continue to Fabricate things
 - Documentation
 - Weekly Youtube Upload
